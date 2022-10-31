@@ -27,6 +27,7 @@
 
 .span-div > input {
   width: 300px;
+  margin-left: -15%;
   align-items: center;
   justify-content: center;
   height: 30px;

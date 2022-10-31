@@ -6,8 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
-You can check it out at [link](https://anny-portfolio.herokuapp.com/)
-
+You can check it out at [link](https://materialcounterapp.netlify.app/
 
 # Built With
 
