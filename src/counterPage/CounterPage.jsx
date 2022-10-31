@@ -18,7 +18,7 @@ const CounterPage = () => {
   const saveTO = () => {
     localStorage.setItem('count', count);
     alert('Material saved!');
-    window.location.reload();
+    // window.location.reload();
   };
 
   return (
