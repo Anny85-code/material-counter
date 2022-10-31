@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 import { IoMdClose } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
 import './Navbar.css';
@@ -10,12 +10,12 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: 'home',
+      path: '/',
       text: 'Home',
     },
     {
       id: 2,
-      path: 'list of materials',
+      path: 'list',
       text: 'List of Materials',
     },
     {
@@ -42,20 +42,23 @@ const Navbar = () => {
       <div>
         <h2 className="header-text">Material Counter App</h2>
       </div>
-      <ul style={{ listStyleType: 'none', '#000': '' }} className="desktop-ul">
-        {links.map((link) => (
-          <li key={link.id}>
-            <Link
-              to={link.path}
-              activeclassname="active-link"
-              spy={true}
-              smooth={true}
-              exact
-            >
-              {link.text}
-            </Link>
-          </li>
-        ))}
+   
+      <ul style={{ listStyleType: 'none' }} className="desktop-ul">
+        <li>
+          <NavLink activeClass="active" to="/" spy={true} smooth={true}>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="list" spy={true} smooth={true}>
+            List of Materials
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="total" spy={true} smooth={true}>
+            Total
+          </NavLink>
+        </li>
       </ul>
 
       <button className="btn-nav" type="button">
@@ -79,7 +82,7 @@ const Navbar = () => {
       <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => (
           <li key={link.id}>
-            <Link
+            <NavLink
               to={link.path}
               activeclassname="active-link"
               onClick={() => closeMenu()}
@@ -89,7 +92,7 @@ const Navbar = () => {
               id="menu-link"
             >
               {link.text}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>

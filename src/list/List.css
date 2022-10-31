@@ -1,0 +1,14 @@
+.main-container-list {
+  text-align: center;
+}
+
+.main-container-list > ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-family: 'Gumela', sans-serif;
+  font-weight: bold;
+}
+
+.main-container-list > ul > li {
+  margin: 15px;
+}

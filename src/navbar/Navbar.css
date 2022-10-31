@@ -2,9 +2,13 @@
   height: 50px;
   display: flex;
   justify-content: space-between;
-  background: red;
+  background: rgb(98, 25, 235);
   padding: 10px;
   align-items: center;
+}
+
+.header-text {
+  font-family: 'Gumela', sans-serif;
 }
 
 .menuNav {
@@ -47,6 +51,19 @@
 
 .desktop-ul > li {
   margin-right: 30px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Gumela', sans-serif;
+}
+
+a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 480px) {

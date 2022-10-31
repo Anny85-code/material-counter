@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image:
+    linear-gradient(
+      321deg,
+      rgba(240, 239, 233, 0.85),
+      rgba(165, 165, 156, 0.85)
+    ),
+    url('../src/image/countr-image.jpg');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 code {
