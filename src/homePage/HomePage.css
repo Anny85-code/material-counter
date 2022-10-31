@@ -1,0 +1,65 @@
+.main-container {
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.span-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px;
+}
+
+.first-span {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: 'Gumela', sans-serif;
+}
+
+.form-control {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.span-div > input {
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid blue;
+  outline: none;
+  padding: 5px;
+}
+
+.span-div > input::placeholder {
+  font-style: normal;
+  font-family: 'Gumela', sans-serif;
+  font-size: 16px;
+}
+
+.add-item-btn {
+  background-color: rgb(152, 146, 243);
+  width: 9.625rem;
+  height: 3.125rem;
+  padding: 0.625rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 13px #8b8484, -5px -5px 13px #c0c4ee;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-container {
+    width: 320px;
+    margin: 20px;
+  }
+}

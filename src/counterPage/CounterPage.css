@@ -1,0 +1,38 @@
+.main-conter-container {
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.main-conter-container > p {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Gumela', sans-serif;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+}
+
+#save-btn {
+  margin-top: 40px;
+  background-color: rgb(135, 224, 135);
+  width: 8.625rem;
+  height: 2.125rem;
+  padding: 0.625rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 13px #7a6e6e, -5px -5px 13px #383636;
+}
