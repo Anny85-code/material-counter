@@ -4,7 +4,6 @@ import { IoMdClose } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
 import './Navbar.css';
 
-
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const links = [
@@ -25,24 +24,26 @@ const Navbar = () => {
     },
   ];
 
-   const body = document.querySelector('body');
+  const body = document.querySelector('body');
 
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
     document.querySelector('.menuNav').style.display = 'block';
-  }
+  };
 
-   const closeMenu = () => {
+  const closeMenu = () => {
     setNavbarOpen(false);
     body.style.overflow = 'auto';
-   }
+  };
 
   return (
     <div className="navbar">
       <div>
-        <h2 className="header-text">Material Counter App</h2>
+        <NavLink activeClass="active" to="/" spy={true} smooth={true}>
+          <h2 className="header-text">Material Counter App</h2>
+        </NavLink>
       </div>
-   
+
       <ul style={{ listStyleType: 'none' }} className="desktop-ul">
         <li>
           <NavLink activeClass="active" to="/" spy={true} smooth={true}>
@@ -98,6 +99,6 @@ const Navbar = () => {
       </ul>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;
