@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './CounterPage.css';
 
 const CounterPage = () => {
@@ -17,8 +18,7 @@ const CounterPage = () => {
 
   const saveTO = () => {
     localStorage.setItem('count', count);
-    alert('Material saved!');
-    // window.location.reload();
+    alert(`${name} saved!`);
   };
 
   return (
@@ -34,9 +34,11 @@ const CounterPage = () => {
           Increment
         </button>
       </div>
-      <button onClick={saveTO} id='save-btn'>
-        Save
-      </button>
+      <NavLink to="/">
+        <button onClick={saveTO} id="save-btn">
+          Save
+        </button>
+      </NavLink>
     </div>
   );
 };
