@@ -27,7 +27,7 @@ const Total = () => {
             className="columns i"
             id="col"
             style={{
-              borderBottom: '2px solid crimson',
+              borderBottom: '2px solid rgb(108, 88, 223)',
             }}
           ></p>
         </div>
@@ -35,7 +35,11 @@ const Total = () => {
           <ul id="p-child">
             <li>
               <div className="custrans-name1">
-                <p className="columns " style={{ color: 'crimson' }} id="col">
+                <p
+                  className="columns "
+                  style={{ color: 'rgb(108, 88, 223)' }}
+                  id="col"
+                >
                   {person.name}
                 </p>
                 <p className="columns i" id="col">
