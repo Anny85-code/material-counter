@@ -19,16 +19,10 @@ const List = () => {
           </p>
           <p className="columns i p">Items</p>
         </div>
-        <div className="custrans-name1">
+        {/* <div className="custrans-name1">
           <p className="columns" id="col"></p>
-          <p
-            className="columns i"
-            // id="col"
-            style={{
-              borderBottom: '2px solid rgb(108, 88, 223)',
-            }}
-          ></p>
-        </div>
+          <p className="columns i" id="col"></p>
+        </div> */}
         {materials.map((item) => (
           <ul id="p-child">
             <li>

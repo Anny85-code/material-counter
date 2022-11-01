@@ -21,16 +21,10 @@ const Total = () => {
           </p>
           <p className="columns i p">Total</p>
         </div>
-        <div className="custrans-name1">
+        {/* <div className="custrans-name1">
           <p className="columns" id="col"></p>
-          <p
-            className="columns i"
-            id="col"
-            style={{
-              borderBottom: '2px solid rgb(108, 88, 223)',
-            }}
-          ></p>
-        </div>
+          <p className="columns i" id="col"></p>
+        </div> */}
         {collate.map((person) => (
           <ul id="p-child">
             <li>
