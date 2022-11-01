@@ -24,7 +24,7 @@ const List = () => {
           </p>
           <p
             className="columns i"
-            id="col"
+            // id="col"
             style={{
               borderBottom: '2px solid crimson',
             }}
