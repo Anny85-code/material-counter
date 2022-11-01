@@ -34,6 +34,7 @@
   border: 1px solid blue;
   outline: none;
   padding: 5px;
+  font-size: 18px;
 }
 
 .span-div > input::placeholder {
@@ -63,7 +64,24 @@
     margin: 20px;
   }
 
+  .add-item-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .span-div {
+    margin: 15px;
+  }
+
+  .first-span {
+    margin: 10px;
+    font-size: 18px;
+  }
+
   .span-div > input {
-    margin-left: -10%;
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
   }
 }

@@ -1,15 +1,17 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { getList } from '../counterPage/CounterPage';
-import './List.css';
 
-const List = () => {
-  const materials = getList();
+const Total = () => {
+  const list = getList();
 
-  const clearItems = () => {
-    localStorage.clear();
-  };
-
+  const collate = Object.values(
+    list.reduce((obj, item) => {
+      obj[item.name]
+        ? (obj[item.name].count += item.count)
+        : (obj[item.name] = item);
+      return obj;
+    }, {})
+  );
   return (
     <div className="main-item-list">
       <div className="main-container-list">
@@ -17,11 +19,10 @@ const List = () => {
           <p className="columns">
             <span className="cus-name1 p">Material</span>
           </p>
-          <p className="columns i p">Items</p>
+          <p className="columns i p">Total</p>
         </div>
         <div className="custrans-name1">
-          <p className="columns" id="col">
-          </p>
+          <p className="columns" id="col"></p>
           <p
             className="columns i"
             id="col"
@@ -30,36 +31,23 @@ const List = () => {
             }}
           ></p>
         </div>
-        {materials.map((item) => (
+        {collate.map((person) => (
           <ul id="p-child">
             <li>
               <div className="custrans-name1">
                 <p className="columns " style={{ color: 'crimson' }} id="col">
-                  {item.name}
+                  {person.name}
                 </p>
-                <p
-                  className="columns i"
-                  id="col"
-                >
-                  {item.count}
+                <p className="columns i" id="col">
+                  {person.count}
                 </p>
               </div>
             </li>
           </ul>
         ))}
       </div>
-      <div className="btn-div">
-        <NavLink to="/">
-          <button className="list-btn">Add Item</button>
-        </NavLink>
-        <NavLink to="/">
-          <button  className="list-btn d" onClick={clearItems}>
-            Clear
-          </button>
-        </NavLink>
-      </div>
     </div>
   );
 };
 
-export default List;
+export default Total;

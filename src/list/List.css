@@ -1,5 +1,13 @@
-.main-container-list {
+.main-item-list {
   text-align: center;
+}
+.main-container-list {
+  border: 2px solid crimson;
+  border-radius: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  margin: 50px auto;
+  background: #fff;
 }
 
 .main-container-list > ul {
@@ -7,8 +15,84 @@
   font-size: 20px;
   font-family: 'Gumela', sans-serif;
   font-weight: bold;
+  padding: 0;
 }
 
-.main-container-list > ul > li {
-  margin: 15px;
+.custrans-name1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.custrans-name1 > p {
+  margin: 0;
+}
+
+.columns {
+  width: 15rem;
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 1.25rem;
+}
+
+#col {
+  border-bottom: 2px solid crimson;
+}
+
+.i {
+  border-left: 2px solid crimson;
+  color: #000;
+}
+
+#a {
+  border-right: 2px solid crimson;
+}
+
+#p-child:nth-child(even) {
+  background-color: rgb(243, 152, 152);
+}
+
+#p-child {
+  margin: 0;
+  padding: 0;
+}
+
+.btn-div {
+  margin-left: 3%;
+}
+
+.list-btn {
+  margin: 40px 50px 0 0;
+  background-color: rgb(135, 224, 135);
+  width: 8.625rem;
+  height: 3.125rem;
+  padding: 0.625rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 13px #7a6e6e, -5px -5px 13px #383636;
+}
+
+.p{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Gumela', sans-serif;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .main-container-list {
+    width: 300px;
+  }
+
+  .list-btn{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin: 20px;
+  }
 }

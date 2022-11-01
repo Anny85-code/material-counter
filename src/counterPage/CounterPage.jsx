@@ -2,6 +2,15 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './CounterPage.css';
 
+const getList = () => {
+  const list = localStorage.getItem('materials');
+  if (list) {
+    return JSON.parse(list);
+  } else {
+    return [];
+  }
+};
+
 const CounterPage = () => {
   let [count, setCount] = useState(0);
 
@@ -16,9 +25,18 @@ const CounterPage = () => {
     }
   };
 
+  const addList = (list, input) => {
+    list.push(input);
+    localStorage.setItem('materials', JSON.stringify(list));
+  };
+
   const saveTO = () => {
-    localStorage.setItem('count', count);
+    if(name && count > 1){
+    const entry = { name, count };
+    const materials = getList();
+    addList(materials, entry);
     alert(`${name} saved!`);
+    }
   };
 
   return (
@@ -34,13 +52,24 @@ const CounterPage = () => {
           Increment
         </button>
       </div>
-      <NavLink to="/">
-        <button onClick={saveTO} id="save-btn">
-          Save
-        </button>
-      </NavLink>
+      <div className="new-save-btn">
+        <NavLink to="/">
+          <button id="save-btn">Add Item</button>
+        </NavLink>
+        <NavLink to="/">
+          <button onClick={saveTO} id="save-btn">
+            Save
+          </button>
+        </NavLink>
+        <NavLink to="/list">
+          <button id="save-btn" >
+            View List
+          </button>
+        </NavLink>
+      </div>
     </div>
   );
 };
 
 export default CounterPage;
+export { getList };
