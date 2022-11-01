@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 30px;
+  /* margin: 30px; */
 }
 
 .first-span {
@@ -56,6 +56,7 @@
   font-weight: bold;
   cursor: pointer;
   box-shadow: 5px 5px 13px #8b8484, -5px -5px 13px #c0c4ee;
+  margin: 30px;
 }
 
 @media only screen and (max-width: 480px) {

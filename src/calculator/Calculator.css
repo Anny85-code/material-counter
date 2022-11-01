@@ -14,3 +14,10 @@
 .d {
   background: rgb(230, 125, 125);
 }
+
+.main-container-cal {
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+  /* margin: 20px; */
+}

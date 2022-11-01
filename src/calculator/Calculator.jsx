@@ -28,7 +28,7 @@ const Calculator = () => {
   };
 
   return (
-    <div className="main-container">
+    <div className="main-container-cal">
       <form action="">
         <div className="form-group">
           <label htmlFor="material">
@@ -88,7 +88,7 @@ const Calculator = () => {
       </form>
 
       <p id="display">
-        The price of {qty} of {material} is {comma(result)} Naira.
+        The price of {qty} {material} is {comma(result)} Naira.
       </p>
     </div>
   );
