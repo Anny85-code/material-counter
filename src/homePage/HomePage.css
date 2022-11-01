@@ -84,4 +84,8 @@
     height: 20px;
     font-size: 15px;
   }
+
+  .span-div > input::placeholder {
+    font-size: 11px;
+  }
 }
