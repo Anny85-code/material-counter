@@ -37,6 +37,7 @@ const HomePage = () => {
               type="button"
               className="add-item-btn"
               onClick={handleAddItem}
+              style={{ margin: '30px'}}
             >
               Enter
             </button>
