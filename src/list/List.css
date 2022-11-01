@@ -26,7 +26,6 @@
 
 .custrans-name1 > p {
   margin: 0;
-  /* padding: 0; */
 }
 
 .columns {
@@ -37,7 +36,6 @@
 }
 
 #col {
-  /* margin-top: 20px; */
   border-bottom: 2px solid crimson;
 }
 
@@ -54,7 +52,7 @@
   background-color: rgb(243, 152, 152);
 }
 
-ul {
+#p-child {
   margin: 0;
   padding: 0;
 }

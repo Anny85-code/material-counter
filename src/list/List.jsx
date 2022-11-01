@@ -53,7 +53,7 @@ const List = () => {
           <button className="list-btn">Add Item</button>
         </NavLink>
         <NavLink to="/">
-          <button  className="list-btn" onClick={clearItems}>
+          <button  className="list-btn d" onClick={clearItems}>
             Clear
           </button>
         </NavLink>
