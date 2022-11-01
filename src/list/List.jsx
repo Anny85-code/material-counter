@@ -11,23 +11,21 @@ const List = () => {
   };
 
   return (
-    <div className='main-item-list'>
+    <div className="main-item-list">
       <div className="main-container-list">
         <div className="custrans-name1">
           <p className="columns">
-            <span className="cus-name1">Material</span>
+            <span className="cus-name1 p">Material</span>
           </p>
-          <p className="columns i">Total</p>
+          <p className="columns i p">Items</p>
         </div>
         <div className="custrans-name1">
           <p className="columns" id="col">
-            {/* <p className="custransactname"></p> */}
           </p>
           <p
             className="columns i"
             id="col"
             style={{
-              // borderRight: '2px solid crimson',
               borderBottom: '2px solid crimson',
             }}
           ></p>
@@ -36,39 +34,29 @@ const List = () => {
           <ul id="p-child">
             <li>
               <div className="custrans-name1">
-                {/* <p className="columns"></p> */}
                 <p className="columns " style={{ color: 'crimson' }} id="col">
                   {item.name}
                 </p>
-                {/* <p
-                  className="columns i"
-                  style={{ borderRight: '2px solid crimson' }}
-                ></p> */}
                 <p
                   className="columns i"
                   id="col"
-                  // style={{ borderRight: '2px solid crimson' }}
                 >
                   {item.count}
                 </p>
-                {/* <p className="columns"></p> */}
               </div>
             </li>
-            {/* <li> {item.count}</li> */}
           </ul>
         ))}
       </div>
-      <div className='btn-div'>
+      <div className="btn-div">
         <NavLink to="/">
-          <button id="save-btn">Add Item</button>
+          <button className="list-btn">Add Item</button>
         </NavLink>
         <NavLink to="/">
-          <button id="save-btn" onClick={clearItems}>
+          <button  className="list-btn" onClick={clearItems}>
             Clear
           </button>
         </NavLink>
-        {/* </ul> */}
-        {/* </div> */}
       </div>
     </div>
   );

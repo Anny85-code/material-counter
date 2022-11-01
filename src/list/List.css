@@ -62,3 +62,39 @@ ul {
 .btn-div {
   margin-left: 3%;
 }
+
+.list-btn {
+  margin: 40px 50px 0 0;
+  background-color: rgb(135, 224, 135);
+  width: 8.625rem;
+  height: 3.125rem;
+  padding: 0.625rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 13px #7a6e6e, -5px -5px 13px #383636;
+}
+
+.p{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Gumela', sans-serif;
+
+}
+
+@media only screen and (max-width: 480px) {
+  .main-container-list {
+    width: 300px;
+  }
+
+  .list-btn{
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin: 20px;
+  }
+}
