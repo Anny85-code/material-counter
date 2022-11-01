@@ -88,7 +88,7 @@ const Calculator = () => {
       </form>
 
       <p id="display">
-        The price of {qty} {material} is {comma(result)} Naira.
+        The price of {comma(qty)} {material} is {comma(result)} Naira.
       </p>
     </div>
   );
