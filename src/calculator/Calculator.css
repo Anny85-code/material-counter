@@ -1,4 +1,4 @@
-#display{
+#display {
   display: none;
   font-size: 20px;
   font-family: 'Gumela', sans-serif;
@@ -6,11 +6,11 @@
   color: rgb(28, 28, 145);
 }
 
-.cal-form{
+.cal-form {
   display: flex;
   flex-direction: column;
 }
 
-.d{
+.d {
   background: rgb(230, 125, 125);
 }
