@@ -16,7 +16,7 @@ const HomePage = () => {
           <label htmlFor="name">
             <div className="span-div">
               <span className="first-span">
-                Name of material<span style={{ color: 'crimson' }}>*</span>
+                Name of material<span style={{ color: 'light-blue' }}>*</span>
               </span>
               <input
                 type="text"

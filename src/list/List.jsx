@@ -20,13 +20,12 @@ const List = () => {
           <p className="columns i p">Items</p>
         </div>
         <div className="custrans-name1">
-          <p className="columns" id="col">
-          </p>
+          <p className="columns" id="col"></p>
           <p
             className="columns i"
             // id="col"
             style={{
-              borderBottom: '2px solid crimson',
+              borderBottom: '2px solid rgb(108, 88, 223)',
             }}
           ></p>
         </div>
@@ -34,13 +33,14 @@ const List = () => {
           <ul id="p-child">
             <li>
               <div className="custrans-name1">
-                <p className="columns " style={{ color: 'crimson' }} id="col">
-                  {item.name}
-                </p>
                 <p
-                  className="columns i"
+                  className="columns "
+                  style={{ color: 'rgb(108, 88, 223)' }}
                   id="col"
                 >
+                  {item.name}
+                </p>
+                <p className="columns i" id="col">
                   {item.count}
                 </p>
               </div>
@@ -53,7 +53,7 @@ const List = () => {
           <button className="list-btn">Add Item</button>
         </NavLink>
         <NavLink to="/">
-          <button  className="list-btn d" onClick={clearItems}>
+          <button className="list-btn d" onClick={clearItems}>
             Clear
           </button>
         </NavLink>
