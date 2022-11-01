@@ -21,6 +21,12 @@ const Calculator = () => {
     document.getElementById('display').style.display = 'none';
   };
 
+  const comma = (num) => {
+    const price = parseInt(num);
+    const newText = price.toLocaleString();
+    return newText; 
+  };
+
   return (
     <div className="main-container">
       <form action="">
@@ -82,7 +88,7 @@ const Calculator = () => {
       </form>
 
       <p id="display">
-        The current price of {material} is {result} Naira
+        The current price of {material} is {comma(result)} Naira
       </p>
     </div>
   );
