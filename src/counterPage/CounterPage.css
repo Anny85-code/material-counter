@@ -22,10 +22,10 @@
 }
 
 #save-btn {
-  margin-top: 40px;
+  margin: 40px 50px 0 0;
   background-color: rgb(135, 224, 135);
   width: 8.625rem;
-  height: 2.125rem;
+  height: 3.125rem;
   padding: 0.625rem;
   outline: none;
   border: none;
@@ -35,4 +35,10 @@
   font-weight: bold;
   cursor: pointer;
   box-shadow: 5px 5px 13px #7a6e6e, -5px -5px 13px #383636;
+}
+
+@media only screen and (max-width: 480px){
+  .new-save-btn {
+    margin-left: 70px;
+  }
 }
