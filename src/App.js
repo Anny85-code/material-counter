@@ -5,6 +5,7 @@ import HomePage from './homePage/HomePage';
 import List from './list/List';
 import Footer from './footer/Footer';
 import Total from "./total/Total";
+import Calculator from './calculator/Calculator';
 
 
 const App = ()=> {
@@ -17,6 +18,7 @@ const App = ()=> {
         <Route path="/counterpage" element={<CounterPage />} />
         <Route path="/list" element={<List />} />
           <Route path="/total" element={<Total />} />
+          <Route path="/calculator" element={<Calculator />} />
       </Routes>
       <Footer />
     </div>

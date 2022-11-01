@@ -7,8 +7,6 @@ const HomePage = () => {
 
   const handleAddItem = () => {
     localStorage.setItem('name', name);
-
-    console.log(name);
   };
 
   return (
