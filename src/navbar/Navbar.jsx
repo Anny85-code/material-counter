@@ -22,6 +22,11 @@ const Navbar = () => {
       path: 'total',
       text: 'Total',
     },
+    {
+      id: 4,
+      path: 'calculator',
+      text: 'Price Calculator',
+    },
   ];
 
   const body = document.querySelector('body');
@@ -48,6 +53,11 @@ const Navbar = () => {
         <li>
           <NavLink activeClass="active" to="/" spy={true} smooth={true}>
             Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClass="active" to="calculator" spy={true} smooth={true}>
+            Price Calculator
           </NavLink>
         </li>
         <li>

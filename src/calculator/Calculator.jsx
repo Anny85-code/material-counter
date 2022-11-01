@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Calculator.css';
 
 const Calculator = () => {
   const [material, setMaterial] = useState('');
@@ -9,6 +10,14 @@ const Calculator = () => {
   const calculator = (e) => {
     e.preventDefault();
     setResult(price * qty);
+    document.getElementById('display').style.display = 'block';
+  };
+
+  const clearResult = () => {
+    setResult(0);
+    setPrice(0);
+    setQuantity(0);
+    setMaterial('');
   };
 
   return (
@@ -48,7 +57,8 @@ const Calculator = () => {
         <button type="submit" onClick={calculator}>Result</button>
       </form>
 
-      <p>The current price of {material} is {result} Naira</p>
+      <p id='display'>The current price of {material} is {result} Naira</p>
+      <button type="button" onClick={clearResult}>Clear</button>
     </div>
   );
 };
