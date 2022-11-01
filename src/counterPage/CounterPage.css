@@ -37,9 +37,13 @@
   box-shadow: 5px 5px 13px #7a6e6e, -5px -5px 13px #383636;
 }
 
+.new-save-btn {
+  margin-top: 40px;
+}
+
 @media only screen and (max-width: 480px) {
   .new-save-btn {
-    margin-left: -25px;
+    margin: 40px 0 0 -24px;
     display: flex;
     padding: 10px;
   }
