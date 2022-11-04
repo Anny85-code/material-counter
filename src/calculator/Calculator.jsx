@@ -76,7 +76,7 @@ const Calculator = () => {
               />
             </div>
           </label>
-          <div className="btn-div">
+          <div className="btn-div btn-cal">
             <button type="submit" onClick={calculator} className="list-btn">
               Result
             </button>
