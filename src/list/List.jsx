@@ -15,9 +15,9 @@ const List = () => {
       <div className="main-container-list">
         <div className="custrans-name1">
           <p className="columns">
-            <span className="cus-name1 p">Material</span>
+            <span className="cus-name1 p">Materials</span>
           </p>
-          <p className="columns i p">Items</p>
+          <p className="columns i p">Number</p>
         </div>
         {materials.map((item) => (
           <ul id="p-child">
