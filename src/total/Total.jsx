@@ -11,7 +11,8 @@ const Total = () => {
         : (obj[item.name] = item);
       return obj;
     }, {})
-  );
+    );
+    console.log(list)
   return (
     <div className="main-item-list">
       <div className="main-container-list">
@@ -33,7 +34,7 @@ const Total = () => {
                   {person.name}
                 </p>
                 <p className="columns i" id="col">
-                  {person.count}
+                  {person.count || person.count1}
                 </p>
               </div>
             </li>
