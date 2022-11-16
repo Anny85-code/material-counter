@@ -31,7 +31,7 @@ const List = () => {
                   {item.name}
                 </p>
                 <p className="columns i" id="col">
-                  {item.count}
+                  {item.count || item.count1}
                 </p>
               </div>
             </li>

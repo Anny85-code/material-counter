@@ -9,6 +9,8 @@ const HomePage = () => {
     localStorage.setItem('name', name);
   };
 
+  const condition = name === '';
+
   return (
     <div className="main-container">
       <form action="" className="material-form">
@@ -24,25 +26,27 @@ const HomePage = () => {
                 id="material-name"
                 name="name"
                 placeholder="Please enter the material you want to count"
-                required
                 value={name}
+                required
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
           </label>
         </div>
-        <div className="form-group-btn">
-          <NavLink to="/counterpage" style={{ textDecoration: 'none' }}>
-            <button
-              type="button"
-              className="add-item-btn"
-              onClick={handleAddItem}
-              style={{ margin: '30px'}}
-            >
-              Enter
-            </button>
-          </NavLink>
-        </div>
+
+          <div className="form-group-btn">
+            { !condition && (<NavLink to="/counterpage" style={{ textDecoration: 'none' }}>
+              <button
+                type="button"
+                className="add-item-btn"
+                onClick={handleAddItem}
+                style={{ margin: '30px' }}
+              >
+                Enter
+              </button>
+            </NavLink>)}
+          </div>
+       
       </form>
     </div>
   );

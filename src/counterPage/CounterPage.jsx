@@ -31,17 +31,25 @@ const CounterPage = () => {
   };
 
   const saveTO = () => {
-    if(name && count > 1){
-    const entry = { name, count };
-    const materials = getList();
-    addList(materials, entry);
-    alert(`${name} saved!`);
+    if (name && count > 1) {
+      const entry = { name, count };
+      const materials = getList();
+      addList(materials, entry);
+      alert(`${name} saved!`);
+      console.log(entry);
     }
   };
 
   return (
     <div className="main-conter-container">
       <p>{name}</p>
+
+      <input
+        type="number"
+        value={count}
+        className="form-control"
+        onChange={(e) => setCount(+e.target.value)}
+      />
       <p>{count}</p>
       <div className="btn-container">
         <button onClick={increment} id="subtract" className="add-item-btn">
@@ -57,14 +65,12 @@ const CounterPage = () => {
           <button id="save-btn">Add Item</button>
         </NavLink>
         <NavLink to="/">
-          <button onClick={saveTO} id="save-btn">
+          <button onClick={saveTO} id="save-btn" type="submit">
             Save
           </button>
         </NavLink>
         <NavLink to="/list">
-          <button id="save-btn" >
-            View List
-          </button>
+          <button id="save-btn">View List</button>
         </NavLink>
       </div>
     </div>
