@@ -35,6 +35,13 @@
   padding-top: 1.25rem;
 }
 
+.column {
+  width: 30px;
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 1.25rem;
+}
+
 #col {
   border-bottom: 2px solid rgb(108, 88, 223);
 }
