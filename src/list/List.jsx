@@ -15,7 +15,7 @@ const List = () => {
       <div className="main-container-list">
         <div className="custrans-name1">
           <p className="column i" id="a">
-            <span className="cus-name1 p">No.</span>
+            <span className="cus-name1 p">S/N</span>
           </p>
           <p className="columns">
             <span className="cus-name1 p">Materials</span>
