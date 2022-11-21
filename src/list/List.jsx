@@ -14,24 +14,26 @@ const List = () => {
     <div className="main-item-list">
       <div className="main-container-list">
         <div className="custrans-name1">
+          <p className="column i" id="a">
+            <span className="cus-name1 p">No.</span>
+          </p>
           <p className="columns">
             <span className="cus-name1 p">Materials</span>
           </p>
           <p className="columns i p">Number</p>
         </div>
-        {materials.map((item) => (
+        {materials.map((item, i) => (
           <ul id="p-child">
-            <li>
+            <li key={item.id}>
               <div className="custrans-name1">
-                <p
-                  className="columns "
-                  style={{ color: '#000' }}
-                  id="col"
-                >
+                <p id="a" className="column i">
+                  {i + 1}
+                </p>
+                <p className="columns " style={{ color: '#000' }} id="col">
                   {item.name}
                 </p>
                 <p className="columns i" id="col">
-                  {item.count || item.count1}
+                  {item.count}
                 </p>
               </div>
             </li>

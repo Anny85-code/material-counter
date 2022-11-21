@@ -4,11 +4,7 @@ import './CounterPage.css';
 
 const getList = () => {
   const list = localStorage.getItem('materials');
-  if (list) {
-    return JSON.parse(list);
-  } else {
-    return [];
-  }
+  return list ? JSON.parse(list) : [];
 };
 
 const CounterPage = () => {
