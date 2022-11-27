@@ -90,6 +90,11 @@
   font-family: 'Gumela', sans-serif;
 }
 
+.del-cont {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 480px) {
   .main-container-list {
     width: 300px;

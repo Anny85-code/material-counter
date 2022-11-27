@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import { getList } from '../counterPage/CounterPage';
 import './List.css';
@@ -10,12 +10,35 @@ const List = () => {
     localStorage.clear();
   };
 
+  const [values, setValues] = useState(materials);
+
+  
+let material;
+  
+
+  const removeMaterial = (element) => {
+    //  const material = materials.filter((t) => console.log(typeof(element.target.id)));
+    material = materials.filter((t) => t.i !== +element.target.id);
+    setValues({...values, material});
+   
+    localStorage.setItem('materials', JSON.stringify(materials));
+    console.log(material);
+  
+  };
+
+  //  useEffect = () => {
+    
+  //  };
+
+
   return (
     <div className="main-item-list">
       <div className="main-container-list">
         <div className="custrans-name1">
           <p className="column i" id="a">
-            <span className="cus-name1 p">S/N</span>
+            <span className="cus-name1 p" style={{ fontSize: '14px' }}>
+              S/N
+            </span>
           </p>
           <p className="columns">
             <span className="cus-name1 p">Materials</span>
@@ -32,8 +55,15 @@ const List = () => {
                 <p className="columns " style={{ color: '#000' }} id="col">
                   {item.name}
                 </p>
-                <p className="columns i" id="col">
+                <p className="columns i del-cont" id="col">
                   {item.count}
+                  <i
+                    id={i}
+                    class="fa fa-trash-o"
+                    style={{ fontSize: '24px' }}
+                    // onClick={(()=> materials.filter((el)=> el !== i))}
+                    onClick={(i) => removeMaterial(i)}
+                  />
                 </p>
               </div>
             </li>
